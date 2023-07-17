@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calkulator</title>
@@ -19,11 +19,23 @@
         <div class="inputs">
 
             <div class="first">
-                <input class="input">
+                <input 
+                 type="number"
+                 id="input1"
+                 class="input"
+                 placeholder="Введите число 1"
+                 value="10"
+                 />
             </div>
         
             <div class="second ">
-                <input class="input">
+                <input 
+                 type="number"
+                 id="input2"
+                 class="input"
+                 placeholder="Введите число 2"
+                 value="5"
+                 />
             </div>
             
         </div>
@@ -31,24 +43,33 @@
         <div class="buttons">
 
             <button class="plus button">
-                <p class="button-p">
+                <p class="button-p"
+                id="plus">
                     +
                 </p>
             </button>
 
             <button class="minus button">
-                <p class="button-p">
+                <p class="button-p"
+                id="minus">
                     -
                 </p>
             </button>
 
         </div>
 
+        <button class="vich"
+            id="submit">
+            <p class="button-txt">
+                Вычислить
+            </p>
+        </button>
+
         <div class="results">
 
             <p class="result">Результат:</p>
             <div class="block">
-            <p class="block-txt">Число</p>
+            <p id="result" class="block-txt">Число</p>
             </div>
 
         </div>
